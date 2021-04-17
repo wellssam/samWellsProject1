@@ -1,0 +1,28 @@
+// wrappers
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flexWrapper{
+    display: flex;
+}
+
+
+// images
+img{
+    width: 100%;
+}
+
+// buttons
+button,
+a.button{
+    background-color: $accent;
+    padding: 1rem 2.5rem;
+    width: max-content;
+    display: inline-block;
+
+    &:active{
+        background-color: $accentLighter;
+    }
+}

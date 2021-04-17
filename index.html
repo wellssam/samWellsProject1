@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bad53cee16.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Willow</title>
 </head>
@@ -15,10 +16,10 @@
             <nav>
                 <ul>
                     <li class="currentPage"><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li class="logo">Willow</li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./pages/article.html">Blog</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="flexWrapper homepageHero">
@@ -31,62 +32,98 @@
     </header>
     <section class="intro">
         <div class="wrapper">
-            <h2>Who's Willow?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore hic, voluptatibus repellat minus quos maxime vero optio consequatur aut nulla! Deserunt repellat velit voluptatum nam illum, veniam odit porro asperiores esse numquam incidunt fugit debitis dignissimos distinctio! Omnis, iusto minima?</p>
-            <a class="button" href="">Find out more</a>
+            <div class="flexWrapper">
+                <h2 class="centeredText">Who's Willow?</h2>
+                <p class="centeredText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore hic, voluptatibus repellat minus quos maxime vero optio consequatur aut nulla! Deserunt repellat velit voluptatum nam illum, veniam odit porro asperiores esse numquam incidunt fugit debitis dignissimos distinctio! Omnis, iusto minima?</p>
+                <a class="button" href="#about">Find out more</a>
+            </div>
         </div>
     </section>
     <section class="articles">
         <div class="wrapper">
-            <img src="./assets/home-image-2.jpg" alt="A bridge hangs between two jungle peaks, a rushing waterfall falling down a cliff in the background.">
-            <h3>Favourite Things</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore at officia nihil iure temporibus voluptatem consequatur, incidunt ut quasi necessitatibus error, eum ea! Mollitia consectetur veniam totam officia molestiae!
-            </p>
-            <a href="">Read more</a>
-            <h3>Bucket List</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatem, repellendus enim eum dicta iusto quisquam deserunt. Commodi porro, dicta sed quam qui placeat quaerat! Quos, hic. Doloremque, officiis impedit.</p>
-            <a href="">Read more</a>
-            <img src="./assets/home-image-3.jpg" alt="A white and yellow lily floats delicately on still water.">
+            <div class="flexWrapper article1">
+                <div class="imageWrapper">
+                    <img src="./assets/home-image-2.jpg" alt="A bridge hangs between two jungle peaks, a rushing waterfall falling down a cliff in the background.">
+                </div>
+                <div class="flexWrapper">
+                    <h3>Favourite Things</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore at officia nihil iure temporibus voluptatem consequatur!
+                    </p>
+                    <a class="button" href="./pages/article.html">Read more</a>
+                </div>
+            </div>
+            <div class="flexWrapper article2">
+                <div class="flexWrapper">
+                    <h3>Bucket List</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatem, repellendus enim eum dicta iusto quisquam deserunt. </p>
+                    <a class="button" href="./pages/article.html">Read more</a>
+                </div>
+                <div class="imageWrapper">
+                    <img src="./assets/home-image-3.jpg" alt="A white and yellow lily floats delicately on still water.">
+                </div>
+            </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="wrapper">
-            <img src="./assets/home-image-4.jpg" alt="A person in a bright yellow raincoat stands in dense jungle foliage">
-            <h3>Willow's Journey</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatem, repellendus enim eum dicta iusto quisquam deserunt. Commodi porro, dicta sed quam qui placeat quaerat! Quos, hic. Doloremque, officiis impedit.</p>
-            <a href="">Find out more</a>
+            <div class="flexWrapper">
+                <div class="imageWrapper">
+                    <img src="./assets/home-image-4.jpg" alt="A person in a bright yellow raincoat stands in dense jungle foliage">
+                </div>
+                <div class="flexWrapper">
+                    <h2>Willow's Journey</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatem, repellendus enim eum dicta iusto quisquam deserunt. Commodi porro, dicta sed quam qui placeat quaerat! Quos, hic. Doloremque, officiis impedit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, sed.</p>
+                    <a class="button" href="./pages/article.html">Find out more</a>
+                </div>
+            </div>
         </div>
     </section>
     <section class="banner">
         <div class="bannerWrapper">
-            <img src="./assets/home-image-5.jpg" alt="A mountain field, white wildflowers poke up through the green grass. In the distance sits a small orange house.">
+            <div class="imageWrapper">
+                <img src="./assets/home-image-5.jpg" alt="A mountain field, white wildflowers poke up through the green grass. In the distance sits a small orange house.">
+            </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="photos">
         <div class="wrapper">
-            <img src="./assets/home-image-6.jpg" alt="A country road stretches ahead.">
-            <img src="./assets/home-image-7.jpg" alt="A bowl of whole lemons in a bright blue bowl, beside a plate of lemon slices.">
-            <img src="./assets/home-image-8.jpg" alt="An old-fashioned staircase vaults up and to the left.">
+            <div class="flexWrapper">
+                <div class="imageWrapper">
+                    <img src="./assets/home-image-6.jpg" alt="A country road stretches ahead.">
+                </div>
+                <div class="imageWrapper">
+                    <img src="./assets/home-image-7.jpg" alt="A bowl of whole lemons in a bright blue bowl, beside a plate of lemon slices.">
+                </div>
+                <div class="imageWrapper">
+                    <img src="./assets/home-image-8.jpg" alt="An old-fashioned staircase vaults up and to the left.">
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="links">
         <div class="wrapper">
-            <div class="linkWrapper">
-                <h3><a href="">Photos</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vel sunt ex esse. Numquam doloribus mollitia earum praesentium deleniti adipisci!</p>
-            </div>
-            <div class="linkWrapper">
-                <h3><a href="">About</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic corrupti tempora nobis repudiandae veniam explicabo fugiat labore omnis quas! Quas.</p>
-            </div>
-            <div class="linkWrapper">
-                <h3><a href="">Blog</a></h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquam maxime illum rerum ab optio laboriosam inventore labore? Tempora, distinctio?</p>
-            </div>
-            <div class="linkWrapper">
-                <h3><a href="">Contact Me</a></h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores suscipit fugiat error porro maiores voluptas omnis voluptatibus hic odit.</p>
+            <div class="flexWrapper">
+                <div class="linkWrapper">
+                    <i class="fas fa-image"></i>
+                    <h3><a href="#photos">Photos</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vel sunt ex esse. Numquam doloribus mollitia earum praesentium deleniti adipisci!</p>
+                </div>
+                <div class="linkWrapper">
+                    <i class="fas fa-user"></i>
+                    <h3><a href="#about">About</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic corrupti tempora nobis repudiandae veniam explicabo fugiat labore omnis quas! Quas.</p>
+                </div>
+                <div class="linkWrapper">
+                    <i class="fas fa-desktop"></i>
+                    <h3><a href="./pages/article.html">Blog</a></h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquam maxime illum rerum ab optio laboriosam inventore labore? Tempora, distinctio?</p>
+                </div>
+                <div class="linkWrapper">
+                    <i class="fas fa-phone"></i>
+                    <h3><a href="./pages/contact.html">Contact Me</a></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores suscipit fugiat error porro maiores voluptas omnis voluptatibus hic odit.</p>
+                </div>
             </div>
         </div>
     </section>

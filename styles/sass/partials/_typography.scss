@@ -1,8 +1,20 @@
-// font-families
-$mainFont: 'Abril Fatface', cursive;
-$menuFont: 'Montserrat', sans-serif;
+
 html{
     font-size: 62.5%;
+}
+
+// general text styles:
+body{
+    font-family:$bodyFont;
+    color: $black;
+    font-size: 2rem;
+    font-weight:400;
+    line-height: 3.2rem;
+}
+
+
+.centeredText{
+    text-align: center;
 }
 
 // link normalization
@@ -21,12 +33,13 @@ a{
 
 // nav typography
 nav{
-    font-family: $menuFont;
+    font-family: $bodyFont;
     font-size: 2rem;
     line-height: 2.9rem;
     letter-spacing: 0.1rem;
     color: $white-shade;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 nav .currentPage{
@@ -34,7 +47,7 @@ nav .currentPage{
 }
 
 
-// hero
+// Headings
 h1{
     font-family: $mainFont;
     color: $white-shade;
@@ -44,8 +57,35 @@ h1{
     text-transform: uppercase;
 }
 
-
 h1.homepageHero{
     font-size: 15rem;
 }
+
+
+h2{
+    font-family: $mainFont;
+    font-size: 4.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: $mainFont;
+    font-size: 3.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+
+}
+// button typography
+button,
+a.button{
+    font-family: $mainFont;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
 

@@ -1,14 +1,14 @@
-// imports
 
+// setup
 @import "partials/setup";
+// global
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/typography";
-@import "partials/wrappers";
+// specific
+@import "partials/general";
 @import "partials/headers";
 @import "partials/sections";
+@import "partials/footers";
 
-// misc styles
-img{
-    width: 100%;
-}
+
