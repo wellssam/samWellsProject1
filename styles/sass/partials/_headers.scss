@@ -1,0 +1,62 @@
+// Homepage header
+header{
+    background-color:$pine ;
+}
+
+// navbar
+
+nav ul {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li{
+        margin: 15px 25px;
+
+    }
+}
+
+
+
+// general hero
+
+
+// homepage hero
+
+h1.homepageHero{
+    position: relative;
+    margin-left: 4rem;
+
+        &::before{
+        content:"";
+        background-image: url(../assets/circle-text.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 13rem;
+        height: 13rem;
+        display: inline-block;
+        position: absolute;
+        top: -4rem;
+        left: -4rem;
+        }  
+}
+
+
+
+
+.flexWrapper.homepageHero{
+    align-items: center;
+}
+
+
+
+.homepageHero .imageWrapper{
+    max-width: 45rem;
+    margin-left: 50px;
+    position: relative;
+    top: 6rem;
+    right: 1rem;
+    box-shadow: 2rem 2rem $white-shade;
+}

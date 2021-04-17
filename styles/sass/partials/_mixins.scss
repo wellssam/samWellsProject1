@@ -1,0 +1,3 @@
+@mixin debug($color: tomato) {
+    border: $color 2px solid;
+}

@@ -1,6 +1,14 @@
 // imports
+
 @import "partials/setup";
 @import "partials/variables";
-@import "partials/typography";
 @import "partials/mixins";
+@import "partials/typography";
+@import "partials/wrappers";
+@import "partials/headers";
+@import "partials/sections";
 
+// misc styles
+img{
+    width: 100%;
+}
