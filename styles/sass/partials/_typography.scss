@@ -87,5 +87,44 @@ a.button{
     text-transform: uppercase;
 }
 
+// CONTACT PAGE  typography
+// Aside:
+ul.iconList{
+    font-size: 2.5rem;
+}
 
+ul.addressList li:first-child{
+    font-weight: 700;
+    line-height: 7rem;
+}
+// Form:
+::placeholder {
+    font-family: $bodyFont;
+    color:$black;
+    opacity: 1;
+}
 
+// BLOG PAGE
+.aboutAside{
+    h3 {
+        line-height: 9rem;
+    }
+    a {
+        font-weight: 700;
+        color: $green-grey;
+    }
+}
+
+.recentPosts{
+    h3{
+        padding-bottom: 3.5rem;
+    }
+}
+
+.recentPosts ul li{
+    padding-left: 4.5rem;
+    background-image:url(../assets/point.png);
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    background-size: 5px 5px;
+}

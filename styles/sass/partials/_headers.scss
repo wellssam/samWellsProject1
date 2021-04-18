@@ -1,10 +1,9 @@
-// Homepage header
-header{
-    background-color:$pine ;
-}
+
 
 // navbar
-
+nav {
+    background-color: $pine;
+}
 nav ul {
     margin: 0 auto;
     display: flex;
@@ -18,9 +17,10 @@ nav ul {
     }
 }
 
-
-
-// general hero
+// Homepage header
+header{
+    background-color:$pine ;
+}
 
 
 // homepage hero
@@ -28,7 +28,6 @@ nav ul {
 h1.homepageHero{
     position: relative;
     margin-left: 4rem;
-
         &::before{
         content:"";
         background-image: url(../assets/circle-text.png);
@@ -44,12 +43,9 @@ h1.homepageHero{
 }
 
 
-
-
 .flexWrapper.homepageHero{
     align-items: center;
 }
-
 
 
 .homepageHero .imageWrapper{
@@ -59,4 +55,28 @@ h1.homepageHero{
     top: 6rem;
     right: 1rem;
     box-shadow: 2rem 2rem $white;
+}
+
+
+// CONTACT PAGE/blog HEADER
+header.contactHeader,
+header.blogHeader{
+    height: 50rem;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contactHeader h1,
+.blogHeader h1{
+    position: absolute;
+    bottom: -1.6rem;
+    left: 15rem;
+}
+
+header.contactHeader{
+    background-image: url(../assets/contact-image-1.jpg);
+}
+header.blogHeader{
+    background-image: url(../assets/blog-image-1.jpg);
 }

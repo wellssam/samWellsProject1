@@ -1,0 +1,30 @@
+form .flexWrapper{
+    flex-wrap: wrap;
+    input {
+        flex: 1 1 45%;
+    }
+    textarea{
+        flex: 1 1 100%;
+        resize: none;
+    }
+    button {
+        flex: 1 1 100%;
+    }
+}
+
+input, 
+textarea{
+    padding: 3rem;
+    border-radius: none;
+    border: none;
+}
+
+input,
+textarea,
+button {
+    margin: 1rem 0.7rem;
+}
+
+input{
+    margin-top: 0;
+}

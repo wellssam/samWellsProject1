@@ -5,53 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="https://kit.fontawesome.com/bad53cee16.js" crossorigin="anonymous"></script>
     <title>Contact Me</title>
 </head>
 <body>
-    <header>
+    <header class="contactHeader">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Willow</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li class="logo">Willow</li>
+                <li><a href="./article.html">Blog</a></li>
+                <li class="currentPage"><a href="">Contact</a></li>
             </ul>
         </nav>
         <h1>Contact Me</h1>
     </header>
-    <aside>
-        <ul>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-linkedin-in"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-        </ul>
-        <ul>
-            <li><a href="">info@email.com</a></li>
-            <li>123-456-7890</li>
-            <li>123 Queen Street West, Unit 10</li>
-            <li>Toronto, Ontario</li>
-            <li>M5V2D5</li>
-        </ul>
-    </aside>
-        <section class="cotactForm">
-            <form>
-                <label for="name"> Name
-                </label>
-                <input type="text" id="name" placeholder="Name">
-                <label for="email">Email address</label>
-                <input type="text" id="email" placeholder="Email address">
-                <label for="message">Message</label>
-                <textarea name="userMessage" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+    <main class="contactMain">
+        <div class="wrapper">
+            <div class="flexWrapper">
+                <aside>
+                    <ul class="iconList">
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <ul class="addressList">
+                        <li><a href="">info@email.com</a></li>
+                        <li>123-456-7890</li>
+                        <li>123 Queen Street West, Unit 10</li>
+                        <li>Toronto, Ontario</li>
+                        <li>M5V2D5</li>
+                    </ul>
+                </aside>
+                <section class="contactForm">
+                    <form>
+                        <div class="flexWrapper">
+                            <label class="visuallyHidden" for="name"> Name
+                            </label>
+                            <input type="text" id="name" placeholder="Name">
+                            <label class="visuallyHidden" for="email">Email address</label>
+                            <input type="text" id="email" placeholder="Email address">
+                            <label class="visuallyHidden"for="message">Message</label>
+                            <textarea name="userMessage" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
         <footer>
             <p>Copyright &#169 2018 HackerYou</p>
         </footer>
-</body>
+    </body>
 </html>

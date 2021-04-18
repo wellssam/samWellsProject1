@@ -136,5 +136,99 @@ section.links>.wrapper>.flexWrapper{
     }
 
 }
+// BLOG AND CONTACT PAGES
+main.contactMain,
+main.blogPost{
+    background-color:$white-shade;
+}
 
+aside{
+    background-color:$white;
+    padding: 5rem 3.5rem;
+}
+
+
+// CONTACT PAGE 
+main.contactMain{
+    padding: 10rem 0;
+   
+    aside{
+        width: 62rem;
+        height: fit-content;
+        margin-right: 3.8rem;
+    }
+}
+
+.contactMain ul.iconList{
+    display: flex;
+    flex-direction: row;
+    color: $pine;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+// BLOG POST
+
+main.blogPost{
+    padding:  10rem 0;
+}
+
+div.blogSidebar,
+div.blogContent{
+    flex-direction: column;
+}
+
+// sidebar
+div.blogSidebar{
+    flex: 1 1 30%;
+    margin-right: 2rem;
+}
+
+aside.aboutAside{
+    margin-bottom: 1rem;
+}
+
+aside.recentPosts{
+    margin-top: 1rem;
+}
+
+
+// main Content
+// articles
+div.blogContent{
+    flex: 1 1 60%;
+    margin-left: 2rem;
+    article{
+        background-color: $white;
+    }
+}
+
+article{
+    padding: 5rem 3.5rem 3.5rem;
+    margin: 0 0.7rem 3.5rem;
+    h2{
+        margin-bottom: 3rem;
+    }
+    p {
+        margin: 1.5rem 0; 
+    }
+}
+
+article.comment{
+    .imageWrapper{
+        flex: 1 1 15%;
+        margin-right: 2rem;
+    }
+    .commentTextWrapper{
+        flex: 1 1 80%;
+        p{
+            margin: 0;
+        }
+    }
+}
+
+article.lastComment,
+article.blogPost{
+    border-bottom: $green-grey 0.5rem solid;
+}
 

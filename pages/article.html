@@ -5,82 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bad53cee16.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Blog & News</title>
 </head>
 <body>
-    <header>
+    <header class="blogHeader">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Willow</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li class="logo">Willow</li>
+                <li class="currentPage"><a href="./article.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <h1>Blog & News</h1>
     </header>
-    <aside>
-        <div class="imageWrapper">
-            <img src="../assets/blog-image-2.jpg" alt="Willow, in her trademark yellow raincoat, peeks through dense leaves.">
+    <main class="blogPost">
+        <div class="wrapper">
+            <div class="flexWrapper">
+                <div class="flexWrapper blogSidebar">
+                    <aside class="aboutAside">
+                        <div class="imageWrapper">
+                            <img src="../assets/blog-image-2.jpg" alt="Willow, in her trademark yellow raincoat, peeks through dense leaves.">
+                        </div>
+                        <h3>About Willow</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat at earum dolores odit atque inventore. <a href="../index.html#about">Find out more.</a></p>
+                    </aside>
+                    <aside class="recentPosts">
+                        <h3>Recent Posts</h3>
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor sit.</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                            <li><a href="">Lorem psum dolor sit.</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="flexWrapper blogContent">
+
+                    <section>
+                        <article class="blogPost">
+                            <h2>My favourite travel destinations</h2>
+                            <h4>Monday October 8th, 2018 by Willow</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum perspiciatis beatae, earum nulla quam dolorum modi fugiat nisi ullam illum aliquam, itaque a pariatur distinctio nemo quo? Pariatur, nam aspernatur?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus porro harum perspiciatis iste exercitationem excepturi? Aliquid vitae obcaecati magni porro libero laborum beatae fugit non consequuntur. Quis ipsa nobis modi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis explicabo a nostrum sint eligendi corporis aliquid voluptatum nobis autem facilis asperiores sunt mollitia veniam officiis, molestiae quae aut earum iusto modi alias minima atque? A et repudiandae, molestias facilis hic in adipisci deserunt totam nemo. Nam ipsum itaque explicabo accusamus ducimus quasi maiores, magnam quo esse laudantium ab dolorum aperiam reiciendis saepe quibusdam commodi exercitationem odit! Necessitatibus distinctio beatae facilis amet temporibus dolorum natus fugit laborum aperiam corrupti.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, alias! Perspiciatis consequuntur a ipsum eveniet.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aspernatur, eaque quidem esse ipsam nisi non fuga neque itaque at fugit sint placeat vel debitis rem. Esse nisi consequuntur necessitatibus.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nemo aperiam assumenda fuga! Non laborum blanditiis eaque eius expedita, reprehenderit necessitatibus nulla natus unde provident recusandae, accusamus deleniti nobis delectus?</p>
+                        </article> 
+                    </section>
+                    <section class="userComments">
+                        <article class="comment">
+                            <div class="flexWrapper">
+                                <div class="imageWrapper">
+                                    <img src="../assets/blog-image-3.jpg" alt="A user's profile image.">
+                                </div>
+                                <div class="commentTextWrapper">
+                                    <h4>Tuesday October 9th, 2018 by Barb</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad nemo facilis impedit eligendi magni culpa molestias eius numquam? Cupiditate ipsa quia quis earum animi expedita fuga dolor recusandae velit.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="comment lastComment">
+                            <div class="flexWrapper">
+                                <div class="imageWrapper">
+                                    <img src="../assets/blog-image-4.jpg" alt="A user's profile image.">
+                                </div>
+                                <div class="commentTextWrapper">
+                                    <h4>Wednesday October 10th, 2018 by Daisy</h4>
+                                    <p>Minus delectus explicabo numquam quos dolorum. Suscipit distinctio tempora deleniti dolorem cum mollitia, ea facilis accusantium nulla soluta nisi reprehenderit iste perferendis molestiae magnam aliquid, architecto illo maiores repellendus dolore.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="postComment">
+                        <form>
+                            <div class="flexWrapper">
+                                <label class="visuallyHidden" for="name"> Name
+                                </label>
+                                <input type="text" id="name" placeholder="Name">
+                                <label class="visuallyHidden"  for="email">Email address</label>
+                                <input type="text" id="email" placeholder="Email address">
+                                <label class="visuallyHidden"  for="comment">Comment</label>
+                                <textarea name="userComment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                                <button type="submit">Post comment</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
         </div>
-        <h3>About Willow</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat at earum dolores odit atque inventore <a href="">Find out more.</a></p>
-    </aside>
-    <aside>
-        <h3>Recent Posts</h3>
-        <ul>
-            <li><a href="">Lorem ipsum dolor sit.</a></li>
-            <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-            <li><a href="">Lorem ipsum dolor sit.</a></li>
-            <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
-        </ul>
-    </aside>
-    <main> 
-        <article>
-            <h2>My favourite travel destinations</h2>
-            <h4>Monday October 8th, 2018 by Willow</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum perspiciatis beatae, earum nulla quam dolorum modi fugiat nisi ullam illum aliquam, itaque a pariatur distinctio nemo quo? Pariatur, nam aspernatur?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus porro harum perspiciatis iste exercitationem excepturi? Aliquid vitae obcaecati magni porro libero laborum beatae fugit non consequuntur. Quis ipsa nobis modi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis explicabo a nostrum sint eligendi corporis aliquid voluptatum nobis autem facilis asperiores sunt mollitia veniam officiis, molestiae quae aut earum iusto modi alias minima atque? A et repudiandae, molestias facilis hic in adipisci deserunt totam nemo. Nam ipsum itaque explicabo accusamus ducimus quasi maiores, magnam quo esse laudantium ab dolorum aperiam reiciendis saepe quibusdam commodi exercitationem odit! Necessitatibus distinctio beatae facilis amet temporibus dolorum natus fugit laborum aperiam corrupti.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, alias! Perspiciatis consequuntur a ipsum eveniet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aspernatur, eaque quidem esse ipsam nisi non fuga neque itaque at fugit sint placeat vel debitis rem. Esse nisi consequuntur necessitatibus.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nemo aperiam assumenda fuga! Non laborum blanditiis eaque eius expedita, reprehenderit necessitatibus nulla natus unde provident recusandae, accusamus deleniti nobis delectus?</p>
-        </article> 
-        <section class="userComments">
-            <article>
-                <div class="imagewrapper">
-                    <img src="../assets/blog-image-3.jpg" alt="A user's profile image.">
-                </div>
-                <h4>Tuesday October 9th, 2018 by Barb</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad nemo facilis impedit eligendi magni culpa molestias eius numquam? Cupiditate ipsa quia quis earum animi expedita fuga dolor recusandae velit.</p>
-            </article>
-            <article>
-                <div class="imagewrapper">
-                    <img src="../assets/blog-image-4.jpg" alt="A user's profile image.">
-                </div>
-                <h4>Wednesday October 10th, 2018 by Daisy</h4>
-                <p>Minus delectus explicabo numquam quos dolorum. Suscipit distinctio tempora deleniti dolorem cum mollitia, ea facilis accusantium nulla soluta nisi reprehenderit iste perferendis molestiae magnam aliquid, architecto illo maiores repellendus dolore.</p>
-            </article>
-        </section>
-        <section class="postComment">
-            <form>
-                <label for="name"> Name
-                </label>
-                <input type="text" id="name" placeholder="Name">
-                <label for="email">Email address</label>
-                <input type="text" id="email" placeholder="Email address">
-                <label for="comment">Comment</label>
-                <textarea name="userComment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-                <button type="submit">Post comment</button>
-            </form>
-        </section>
     </main>
     <footer>
         <p>Copyright &#169 2018 HackerYou</p>
     </footer>
-    
+        
 </body>
 </html>

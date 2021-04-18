@@ -300,6 +300,60 @@ a.button {
   text-transform: uppercase;
 }
 
+ul.iconList {
+  font-size: 2.5rem;
+}
+
+ul.addressList li:first-child {
+  font-weight: 700;
+  line-height: 7rem;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #1f1f1f;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #1f1f1f;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #1f1f1f;
+  opacity: 1;
+}
+
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #1f1f1f;
+  opacity: 1;
+}
+
+.aboutAside h3 {
+  line-height: 9rem;
+}
+
+.aboutAside a {
+  font-weight: 700;
+  color: #709b6b;
+}
+
+.recentPosts h3 {
+  padding-bottom: 3.5rem;
+}
+
+.recentPosts ul li {
+  padding-left: 4.5rem;
+  background-image: url(../assets/point.png);
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+  background-size: 5px 5px;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -330,7 +384,11 @@ a.button:active {
   background-color: #e4a43680;
 }
 
-header {
+button {
+  border: none;
+}
+
+nav {
   background-color: #345231;
 }
 
@@ -353,6 +411,10 @@ nav ul {
 
 nav ul li {
   margin: 15px 25px;
+}
+
+header {
+  background-color: #345231;
 }
 
 h1.homepageHero {
@@ -387,6 +449,29 @@ h1.homepageHero::before {
   right: 1rem;
   -webkit-box-shadow: 2rem 2rem #ffffff;
           box-shadow: 2rem 2rem #ffffff;
+}
+
+header.contactHeader,
+header.blogHeader {
+  height: 50rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contactHeader h1,
+.blogHeader h1 {
+  position: absolute;
+  bottom: -1.6rem;
+  left: 15rem;
+}
+
+header.contactHeader {
+  background-image: url(../assets/contact-image-1.jpg);
+}
+
+header.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
 }
 
 section.intro {
@@ -562,6 +647,157 @@ section.links > .wrapper > .flexWrapper {
   height: 5rem;
   text-align: center;
   padding: 1.4rem;
+}
+
+main.contactMain,
+main.blogPost {
+  background-color: #f6f6f6;
+}
+
+aside {
+  background-color: #ffffff;
+  padding: 5rem 3.5rem;
+}
+
+main.contactMain {
+  padding: 10rem 0;
+}
+
+main.contactMain aside {
+  width: 62rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 3.8rem;
+}
+
+.contactMain ul.iconList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #345231;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20rem;
+}
+
+main.blogPost {
+  padding: 10rem 0;
+}
+
+div.blogSidebar,
+div.blogContent {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.blogSidebar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  margin-right: 2rem;
+}
+
+aside.aboutAside {
+  margin-bottom: 1rem;
+}
+
+aside.recentPosts {
+  margin-top: 1rem;
+}
+
+div.blogContent {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  margin-left: 2rem;
+}
+
+div.blogContent article {
+  background-color: #ffffff;
+}
+
+article {
+  padding: 5rem 3.5rem 3.5rem;
+  margin: 0 0.7rem 3.5rem;
+}
+
+article h2 {
+  margin-bottom: 3rem;
+}
+
+article p {
+  margin: 1.5rem 0;
+}
+
+article.comment .imageWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15%;
+          flex: 1 1 15%;
+  margin-right: 2rem;
+}
+
+article.comment .commentTextWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+}
+
+article.comment .commentTextWrapper p {
+  margin: 0;
+}
+
+article.lastComment,
+article.blogPost {
+  border-bottom: #709b6b 0.5rem solid;
+}
+
+form .flexWrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+form .flexWrapper input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+}
+
+form .flexWrapper textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  resize: none;
+}
+
+form .flexWrapper button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+input,
+textarea {
+  padding: 3rem;
+  border-radius: none;
+  border: none;
+}
+
+input,
+textarea,
+button {
+  margin: 1rem 0.7rem;
+}
+
+input {
+  margin-top: 0;
 }
 
 footer {
