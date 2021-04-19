@@ -22,7 +22,7 @@ section.intro{
 
 // HOMEPAGE ARTICLES
 section.articles 
-    .flexWrapper{
+    .articleWrapper{
         justify-content: space-between;
         .imageWrapper{
             flex: 0 1 50%;
@@ -45,7 +45,7 @@ section.articles
     }
 
 
-.article1.flexWrapper{
+.article1{
     .flexWrapper{
         margin:10rem 0 5rem 10rem;
     }
@@ -55,7 +55,7 @@ section.articles
     }
 }
 
-.article2.flexWrapper{
+.article2{
     .flexWrapper{
         text-align: right;
         align-items: flex-end;
@@ -67,6 +67,48 @@ section.articles
     }
 }
 
+@media (max-width: 1200px) {
+    section.intro{
+        padding-bottom: 8rem;
+    }
+
+    section.articles{
+        padding-top: 5rem;
+    }
+
+
+    .articleWrapper.article1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .flexWrapper{
+            align-items: center;
+            margin: 5rem 15rem;
+            text-align: center;
+        }
+        .imageWrapper{
+            width: 70%;
+            top: 0;
+            box-shadow: 2rem 2rem $green-grey;
+        }
+    }
+
+    .articleWrapper.article2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .flexWrapper{
+            align-items: center;
+            margin: 5rem 15rem;
+            text-align: center;
+        }
+        .imageWrapper{
+            width: 70%;
+            bottom: 0;
+            box-shadow: 2rem 2rem $pine;
+        }
+    }
+}
 
 // HOMEPAGE ABOUT SECTION
 

@@ -505,14 +505,14 @@ section.intro .flexWrapper a {
 }
 
 section.articles
-.flexWrapper {
+.articleWrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 section.articles
-.flexWrapper .imageWrapper {
+.articleWrapper .imageWrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
@@ -520,7 +520,7 @@ section.articles
 }
 
 section.articles
-.flexWrapper .flexWrapper {
+.articleWrapper .flexWrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40%;
           flex: 1 1 40%;
@@ -534,31 +534,31 @@ section.articles
 }
 
 section.articles
-.flexWrapper .flexWrapper h3 {
+.articleWrapper .flexWrapper h3 {
   margin-bottom: 1rem;
 }
 
 section.articles
-.flexWrapper .flexWrapper p {
+.articleWrapper .flexWrapper p {
   margin: 1rem 0;
 }
 
 section.articles
-.flexWrapper .flexWrapper a {
+.articleWrapper .flexWrapper a {
   margin-top: 1rem;
 }
 
-.article1.flexWrapper .flexWrapper {
+.article1 .flexWrapper {
   margin: 10rem 0 5rem 10rem;
 }
 
-.article1.flexWrapper .imageWrapper {
+.article1 .imageWrapper {
   top: -5rem;
   -webkit-box-shadow: 2rem 2rem #709b6b, -55rem 2rem #709b6b;
           box-shadow: 2rem 2rem #709b6b, -55rem 2rem #709b6b;
 }
 
-.article2.flexWrapper .flexWrapper {
+.article2 .flexWrapper {
   text-align: right;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -566,10 +566,69 @@ section.articles
   margin: 0 10rem 5rem 0rem;
 }
 
-.article2.flexWrapper .imageWrapper {
+.article2 .imageWrapper {
   bottom: -5rem;
   -webkit-box-shadow: 2rem 2rem #345231, 55rem 2rem #345231;
           box-shadow: 2rem 2rem #345231, 55rem 2rem #345231;
+}
+
+@media (max-width: 1200px) {
+  section.intro {
+    padding-bottom: 8rem;
+  }
+  section.articles {
+    padding-top: 5rem;
+  }
+  .articleWrapper.article1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .articleWrapper.article1 .flexWrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5rem 15rem;
+    text-align: center;
+  }
+  .articleWrapper.article1 .imageWrapper {
+    width: 70%;
+    top: 0;
+    -webkit-box-shadow: 2rem 2rem #709b6b;
+            box-shadow: 2rem 2rem #709b6b;
+  }
+  .articleWrapper.article2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .articleWrapper.article2 .flexWrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5rem 15rem;
+    text-align: center;
+  }
+  .articleWrapper.article2 .imageWrapper {
+    width: 70%;
+    bottom: 0;
+    -webkit-box-shadow: 2rem 2rem #345231;
+            box-shadow: 2rem 2rem #345231;
+  }
 }
 
 section.about {
