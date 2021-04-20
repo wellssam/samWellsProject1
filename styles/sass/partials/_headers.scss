@@ -22,6 +22,13 @@ nav ul {
         @media(max-width: $mobile){
             margin: 15px 12px;
         }
+        a {
+            &:hover{
+            border-bottom: $accent solid 0.5rem;
+            border-radius: 25%;
+            box-sizing: content-box;
+            }
+        }
 
     }
 }

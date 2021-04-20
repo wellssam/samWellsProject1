@@ -42,6 +42,12 @@ input{
     }
 }
 
+.contactForm input{
+    @media(max-width: 1179px){
+        margin-top: 1rem;
+    }
+}
+
 .nameInput{
     @media(max-width: $mobile){
         margin-top: 0;

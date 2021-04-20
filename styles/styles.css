@@ -461,6 +461,13 @@ nav ul li {
   }
 }
 
+nav ul li a:hover {
+  border-bottom: #e4a436 solid 0.5rem;
+  border-radius: 25%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 header {
   background-color: #345231;
 }
@@ -1272,6 +1279,12 @@ input {
 
 @media (max-width: 1024px) {
   input {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1179px) {
+  .contactForm input {
     margin-top: 1rem;
   }
 }
