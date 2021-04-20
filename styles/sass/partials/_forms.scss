@@ -2,6 +2,9 @@ form .flexWrapper{
     flex-wrap: wrap;
     input {
         flex: 1 1 45%;
+        @media(max-width:$horizontalTablet){
+            flex-basis: 100%;
+        }
     }
     textarea{
         flex: 1 1 100%;
@@ -9,6 +12,9 @@ form .flexWrapper{
     }
     button {
         flex: 1 1 100%;
+        @media(max-width: $mobile){
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -17,14 +23,27 @@ textarea{
     padding: 3rem;
     border-radius: none;
     border: none;
+
 }
 
 input,
 textarea,
 button {
     margin: 1rem 0.7rem;
+    @media (max-width: $horizontalTablet){
+        margin: 1rem 0;
+    }
 }
 
 input{
     margin-top: 0;
+    @media(max-width: $horizontalTablet){
+        margin-top: 1rem;
+    }
+}
+
+.nameInput{
+    @media(max-width: $mobile){
+        margin-top: 0;
+    }
 }

@@ -21,11 +21,13 @@
                 <li class="currentPage"><a href="">Contact</a></li>
             </ul>
         </nav>
-        <h1>Contact Me</h1>
+        <div class="responsiveWrapper">
+            <h1>Contact<span class="shorterTitles"> Me</span></h1>
+        </div>
     </header>
     <main class="contactMain">
         <div class="wrapper">
-            <div class="flexWrapper">
+            <div class="flexWrapper contactWrapper">
                 <aside>
                     <ul class="iconList">
                         <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
@@ -46,7 +48,7 @@
                         <div class="flexWrapper">
                             <label class="visuallyHidden" for="name"> Name
                             </label>
-                            <input type="text" id="name" placeholder="Name">
+                            <input type="text" id="name" placeholder="Name" class="nameInput">
                             <label class="visuallyHidden" for="email">Email address</label>
                             <input type="text" id="email" placeholder="Email address">
                             <label class="visuallyHidden"for="message">Message</label>

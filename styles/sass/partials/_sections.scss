@@ -17,6 +17,15 @@ section.intro{
         a {
             margin: 20px;
         }
+        @media (max-width: $horizontalTablet){
+            margin: 0 3rem;
+        }
+    }
+    @media (max-width: $smallDesktop){
+        padding-bottom: 5rem;
+    }
+    @media(max-width: $horizontalTablet){
+        padding: 5rem 0;
     }
 }
 
@@ -67,10 +76,7 @@ section.articles
     }
 }
 
-@media (max-width: 1200px) {
-    section.intro{
-        padding-bottom: 8rem;
-    }
+@media (max-width: $smallDesktop) {
 
     section.articles{
         padding-top: 5rem;
@@ -106,7 +112,13 @@ section.articles
             width: 70%;
             bottom: 0;
             box-shadow: 2rem 2rem $pine;
+            
         }
+    }
+}
+@media(max-width: $verticalTablet){
+    .articleWrapper.flexWrapper>.flexWrapper{
+        margin: 5rem;
     }
 }
 
@@ -116,14 +128,20 @@ section.about{
     background-color: $white-shade;
     padding: 12rem 0;
     margin-top: 3rem;
+    @media (max-width: $horizontalTablet){
+        padding: 6rem 0;
+    }
 }
 
-section.about>.wrapper>.flexWrapper{
+.aboutWrapper{
     .imageWrapper{
         flex: 0 1 25%;
         box-shadow: 2rem 2rem $green-grey;
         position:relative;
         top: -2rem;
+        @media(max-width: $horizontalTablet){
+            display: none;
+        }
     }
     .flexWrapper{
         flex: 1 1 50%;
@@ -133,10 +151,26 @@ section.about>.wrapper>.flexWrapper{
         a{
             margin-top: 1rem;
         }
+        @media(max-width: $horizontalTablet){
+            text-align: center;
+            margin: 0;
+            align-items: center;
+            justify-content: space-between;
+            a,
+            p,
+            h2 {
+                margin: 2rem;
+            }
+        }
     }
 }
 
 // HOMEPAGE BANNER IMAGE SECTION
+section.banner{
+    @media(max-width:$horizontalTablet){
+        display: none;
+    }
+}
 
 // HOMEPAGE GALLERY SECTION
 
@@ -144,7 +178,16 @@ section.gallery>.wrapper>.flexWrapper{
     margin: 10rem 0;
     justify-content: space-between;
     .imageWrapper{
-        width: calc((100% / 3) - (8rem / 3))
+        width: calc((100% / 3) - (8rem / 3));
+        @media (max-width:$verticalTablet){
+            width: 70%;
+            margin: 2rem;
+        }
+    }
+    @media(max-width: $verticalTablet){
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem auto;
     }
 }
 
@@ -153,17 +196,27 @@ section.gallery>.wrapper>.flexWrapper{
 section.links{
     background-color: $white-shade;
     padding: 3rem 0 10rem;
+    @media(max-width: $mobile){
+        padding: 1rem 0 5rem;
+    }
 }
 
 section.links>.wrapper>.flexWrapper{
     flex-wrap: wrap;
     justify-content: space-between;
+    @media(max-width:$horizontalTablet){
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-left: 5rem;
+        padding-right: 5rem; 
+    }
 }
 
 .linkWrapper{
     flex-basis: 40%;
     margin: 8rem 0 0 8rem;
     position: relative;
+    
     i{
         position: absolute;
         left: -8rem;
@@ -175,6 +228,23 @@ section.links>.wrapper>.flexWrapper{
         height: 5rem;
         text-align: center;
         padding: 1.4rem;
+        @media(max-width: $mobile){
+            position: static;
+            margin-bottom: 2rem;
+        }
+    }
+    @media(max-width: $mobile){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-top: 4rem;
+    }
+    p {
+        @media(max-width: $mobile){
+            display: none;
+        }
     }
 
 }
@@ -193,11 +263,40 @@ aside{
 // CONTACT PAGE 
 main.contactMain{
     padding: 10rem 0;
-   
+    @media(max-width:$horizontalTablet){
+        padding: 5rem;
+    }
+    @media(max-width:$mobile){
+        padding: 0;
+    }
     aside{
         width: 62rem;
         height: fit-content;
         margin-right: 3.8rem;
+        @media(max-width:$horizontalTablet){
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 3rem;
+            border-bottom: $green-grey solid 0.5rem;
+        }
+        @media(max-width: $mobile){
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+
+.contactWrapper{
+    @media(max-width:$horizontalTablet){
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
     }
 }
 
@@ -213,6 +312,12 @@ main.contactMain{
 
 main.blogPost{
     padding:  10rem 0;
+    @media(max-width:$horizontalTablet){
+        padding: 5rem;
+    }
+    @media(max-width: $mobile){
+        padding: 0;
+    }
 }
 
 div.blogSidebar,
@@ -220,14 +325,37 @@ div.blogContent{
     flex-direction: column;
 }
 
+div.blogWrapper{
+    @media(max-width: $horizontalTablet){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
 // sidebar
 div.blogSidebar{
     flex: 1 1 30%;
     margin-right: 2rem;
+    @media(max-width: $horizontalTablet){
+        margin: 0;
+        text-align: center;
+        .imageWrapper{
+            display: none; 
+        }
+    }
 }
 
 aside.aboutAside{
     margin-bottom: 1rem;
+    @media(max-width: $horizontalTablet){
+        padding-top: 4rem;
+        margin-top: 1rem;
+        border-top: $green-grey solid 0.5rem;
+    }
+    @media(max-width: $mobile){
+        margin-top: 0;
+    }
 }
 
 aside.recentPosts{
@@ -240,6 +368,9 @@ aside.recentPosts{
 div.blogContent{
     flex: 1 1 60%;
     margin-left: 2rem;
+    @media(max-width: $horizontalTablet){
+        margin: 0;
+    }
     article{
         background-color: $white;
     }
@@ -260,6 +391,11 @@ article.comment{
     .imageWrapper{
         flex: 1 1 15%;
         margin-right: 2rem;
+        @media(max-width: $mobile){
+            max-width: 90px;
+            margin-bottom: 1rem;
+            box-shadow: 1rem -1rem $green-grey 
+        }
     }
     .commentTextWrapper{
         flex: 1 1 80%;
@@ -267,7 +403,14 @@ article.comment{
             margin: 0;
         }
     }
+    .flexWrapper{
+        @media(max-width: $mobile){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
+
 
 article.lastComment,
 article.blogPost{

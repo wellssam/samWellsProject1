@@ -21,11 +21,13 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>Blog & News</h1>
+        <div class="responsiveWrapper">
+            <h1>Blog <span class="shorterTitles">& News</span></h1>
+        </div>
     </header>
     <main class="blogPost">
         <div class="wrapper">
-            <div class="flexWrapper">
+            <div class="flexWrapper blogWrapper">
                 <div class="flexWrapper blogSidebar">
                     <aside class="aboutAside">
                         <div class="imageWrapper">
@@ -87,7 +89,7 @@
                             <div class="flexWrapper">
                                 <label class="visuallyHidden" for="name"> Name
                                 </label>
-                                <input type="text" id="name" placeholder="Name">
+                                <input type="text" id="name" placeholder="Name" class="nameInput">
                                 <label class="visuallyHidden"  for="email">Email address</label>
                                 <input type="text" id="email" placeholder="Email address">
                                 <label class="visuallyHidden"  for="comment">Comment</label>
