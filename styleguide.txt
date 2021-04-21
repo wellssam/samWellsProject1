@@ -1,0 +1,23 @@
+Overall structure
+    Root folder contains index.html readme.md + assets/ pages/ styles/
+    pages folder contains other 2 html files
+    styles folder contains styles.css + sass/
+    sass folder contains styles.scss + partials/
+
+Partials:
+Typography
+Setup
+Variables
+Mixins
+Header
+Footer
++ any others
+
+Naming conventions
+variables/classes/ids are in camelCase 
+eg.
+blogWrapper / contactWrapper
+Etc    
+
+2 Space indentation
+Colour- hex codes
