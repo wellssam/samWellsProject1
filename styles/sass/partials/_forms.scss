@@ -53,3 +53,7 @@ input{
         margin-top: 0;
     }
 }
+
+input:invalid {
+    box-shadow: none;
+}
