@@ -6,7 +6,7 @@ const willowForm = {};
 // init function
 willowForm.init = function() {
     hamburgerListener();
-    if(form != null){
+    if(form !== null){
         form.reset();
         commentFormListener();
     }
