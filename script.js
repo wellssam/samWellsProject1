@@ -3,17 +3,23 @@
 // namespace
 const willowForm = {};
 
-// selections
+// init function
+willowForm.init = function() {
+    hamburgerListener();
+    if(form != null){
+        form.reset();
+        commentFormListener();
+    }
+}
+
+
+// functional comments on blog page
+// selections for comments
 const form = document.getElementById('commentForm');
 const commentArea = document.querySelector('section.userComments');
 const nameInput = document.getElementById('name')
 const textInput = document.getElementById('comment')
 const emailInput = document.getElementById('email')
-// init function
-willowForm.init = function() {
-    form.reset();
-    commentFormListener();
-}
 
 function commentFormListener(){
     form.addEventListener('submit', () => {
@@ -27,34 +33,34 @@ function commentFormListener(){
 function createComment(){
     const newComment = document.createElement('article');
     newComment.innerHTML = `
-        <div class="flexWrapper">
-            <div class="imageWrapper">
-                <img src="https://www.placecage.com/90/90" alt="User Barb's profile image.">
-            </div>
-            <div class="commentTextWrapper">
-                <h4></h4>
-                <p></p>
-            </div>
-        </div>
+    <div class="flexWrapper">
+    <div class="imageWrapper">
+    <img src="https://www.placecage.com/90/90" alt="User Barb's profile image.">
+    </div>
+    <div class="commentTextWrapper">
+    <h4></h4>
+    <p></p>
+    </div>
+    </div>
     `
     newComment.classList.add('comment', 'lastComment')
     const newCommentDateNode = newComment.childNodes[1].childNodes[3].childNodes[1]
     const newCommentTextNode = newComment.childNodes[1].childNodes[3].childNodes[3]
-
+    
     const commentTime = new Date();
     const numericDay = commentTime.getDay();
     const numericMonth = commentTime.getMonth();
     const numericDate = commentTime.getDate();
     const numericYear = commentTime.getFullYear();
-
+    
     const day = convertDay(numericDay);
     const month = convertMonth(numericMonth);
     const date = convertDate(numericDate);
-
+    
     newCommentDateNode.textContent = `${day} ${month} ${date}, ${numericYear}  by ${nameInput.value}`
     newCommentTextNode.textContent = textInput.value
-
-
+    
+    
     appendComment(newComment)
 }
 
@@ -110,6 +116,33 @@ function convertDate(numericDate){
 function appendComment(newComment) {
     commentArea.appendChild(newComment);
 }
+
+
+
+// hamburger menu
+// when the hamburger menu is clicked, toggle the visibility of the unordered list within the nav element.
+// selections
+const hamburgerIcon = document.querySelector('.hamburger');
+const navItems = document.querySelector('nav ul');
+
+function hamburgerListener(){
+    hamburgerIcon.addEventListener('click', ()=>{
+        navItems.style.visibility = 'visible';
+        secondHamburgerListener()
+    })
+}
+
+function secondHamburgerListener(){
+    hamburgerIcon.addEventListener('click', () => {
+        navItems.style.visibility = 'hidden';
+        hamburgerListener()
+    })
+}
+
+
+
+
+
 
 // on window load initialize function
 window.onload = willowForm.init();

@@ -4,11 +4,29 @@
 nav {
     background-color: $pine;
     @media(max-width:$verticalTablet){
-        .logo,
-        .currentPage{
+        .logo{
             display:none;
+        
         }
     }
+    .hamburger{
+        display: none;
+        @media(max-width: $verticalTablet){
+            display: block;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+        div{
+            width: 60px;
+            height: 4px;
+            background: black;
+            margin: 10px;
+            border-radius: 25%;
+        }
+        
+    }
+    
 }
 nav ul {
     margin: 0 auto;
@@ -16,6 +34,16 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media(max-width: $verticalTablet){
+        flex-direction: column;
+        background-color: $pine;
+        position: absolute;
+        right: 0;
+        top: 6rem;
+        z-index: 1;
+        visibility:hidden;
+        box-shadow: -1rem 1rem $green-grey;
+    }
 
     li{
         margin: 15px 25px;
@@ -108,6 +136,12 @@ header.blogHeader{
             justify-content: center;
             align-items: center;
             margin-top: 3rem;
+        }
+    }
+    @media(max-width: $verticalTablet){
+        .responsiveWrapper{
+            padding-top: 4rem;
+            margin-top: 0;
         }
     }
     
